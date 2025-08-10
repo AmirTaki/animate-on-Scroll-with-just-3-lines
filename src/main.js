@@ -14,8 +14,12 @@ const blocks = document.querySelectorAll(".block")
 blocks.forEach(block => {
     const random = (getRandomArbitrary(0, colors.length -1))
     block.style.backgroundColor = colors[random]
-    const randomWidth = getRandomArbitrary(0, widths.length -1);
-    block.style.width = widths[randomWidth]+"px"
+   
 
 });
 
+for (let i = 0 ; i < blocks.length ; i+=3){
+    
+    const randomWidth = getRandomArbitrary(0, widths.length -1);
+    blocks[i].style.width = widths[randomWidth]+"px"
+}
