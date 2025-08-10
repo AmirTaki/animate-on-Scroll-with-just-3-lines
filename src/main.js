@@ -7,7 +7,7 @@ function getRandomArbitrary(min, max) {
 }
 const blocks = document.querySelectorAll(".block")
 blocks.forEach(block => {
-    
+    const random = (getRandomArbitrary(0, colors.length -1))
+    block.style.backgroundColor = colors[random]
 });
 
-const random = (getRandomArbitrary(0, colors.length -1))
