@@ -3,7 +3,7 @@ const colors = ['rgb(1, 4,2)', 'rgb(26, 190, 81)', 'rgb(25, 164, 62)', 'rgb(70, 
     "rgb(151, 14, 14)", 'rgb(206, 216, 5)','rgb(89, 216, 5)', "silver", "blue", "pink", "orange",
     
 ]
-const widths = ["100", '400', "500", "600", "700", "900", "300", "50"] 
+const widths = ["100", '400', "500", "600","250","150",  "300", "123", '260'] 
 
 
 
@@ -15,7 +15,7 @@ blocks.forEach(block => {
     const random = (getRandomArbitrary(0, colors.length -1))
     block.style.backgroundColor = colors[random]
     const randomWidth = getRandomArbitrary(0, widths.length -1);
-    block.style.width = 
+    block.style.width = widths[randomWidth]+"px"
 
 });
 
