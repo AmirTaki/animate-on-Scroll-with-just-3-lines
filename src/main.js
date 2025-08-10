@@ -3,6 +3,9 @@ const colors = ['rgb(1, 4,2)', 'rgb(26, 190, 81)', 'rgb(25, 164, 62)', 'rgb(70, 
     "rgb(151, 14, 14)", 'rgb(206, 216, 5)','rgb(89, 216, 5)', "silver", "blue", "pink", "orange",
     
 ]
+const widths = ["100", '400', "500", "600", "700", "900", "300"] 
+
+
 function getRandomArbitrary(min, max) {
   return Math.floor( Math.random() * (max - min) + min);
 }
